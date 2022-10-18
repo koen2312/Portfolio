@@ -1,0 +1,38 @@
+<html>
+	<head>
+	<style>
+	#video{
+	border: 2px red solid;
+	height:708px;
+	width:902px;
+	}
+	
+	
+	</style>
+	</head>
+	<body>
+	<img src="1.jpg" id="video"></img>
+	
+	<script>
+			var frameCount = 233;
+			var currentFrame = 1;
+			var img = document.getElementById("video");
+			
+			function displayFrame() {
+				img.src = currentFrame + ".jpg";
+				currentFrame ++;
+				
+				if(currentFrame > frameCount) {
+					currentFrame = 1;
+				}
+				
+				setTimeout(function() {
+					displayFrame();
+				}, 100);
+			}
+			
+			displayFrame();
+			
+		</script>
+	</body>
+</html>

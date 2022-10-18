@@ -1,0 +1,93 @@
+<html>
+	<head>
+		<style>
+			.piano_border1{
+				background: #434323;
+				height: 175px;
+				border: solid 1px black;
+				position: absolute;
+				top: 10px;
+				left: 50px;
+			}
+			.piano_border2{
+				background-color: #434323;
+				height: 175px;
+				border: solid 1px black;
+				position: absolute;
+				top: 10px;
+				left: 440px;
+			}
+			.piano{
+				position: relative;
+				height: 100px;
+				margin-top: 10px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			#key{
+				background-color: white;
+				float: left;
+				border-radius: 10px;
+				border: solid 1px black;
+				width: 50px;
+				height: 150px;
+				position: relative;
+			}
+			#hotkey{
+				position: absolute;
+				background-color: black;
+				float: left;
+				border: solid 1px black;
+				width: 20px;
+				height: 80px;
+				border-radius: 5px;
+			}
+		</style>
+		<script>
+			function playKey (filename) {
+				var key = new Audio("piano_geluiden/"+ filename);
+				key.play();
+			}
+			function hotkey (filename) {
+				var key = new Audio("piano_geluiden/"+ filename);
+				key.play();
+			}
+		</script>
+	</head>
+	<body>
+		<div class="piano_border1">
+			<div class="piano">
+				<div id="key" onclick="playKey('39148__jobro__piano-ff-001.wav')"></div>
+				<div id="key" onclick="playKey('39150__jobro__piano-ff-003.wav')"></div>
+				<div id="key" onclick="playKey('39154__jobro__piano-ff-007.wav')"></div>
+				<div id="key" onclick="playKey('39154__jobro__piano-ff-007.wav')"></div>
+				<div id="key" onclick="playKey('39155__jobro__piano-ff-008.wav')"></div>
+				<div id="key" onclick="playKey('39157__jobro__piano-ff-010.wav')"></div>
+				<div id="key" onclick="playKey('39159__jobro__piano-ff-012.wav')"></div>
+				
+				<div id="hotkey" style="left:41;" onclick="hotkey('39149__jobro__piano-ff-002.wav')"></div>
+				<div id="hotkey" style="left:93;" onclick="hotkey('39151__jobro__piano-ff-004.wav')"></div>
+				<div id="hotkey" style="left:145;" onclick="hotkey('39153__jobro__piano-ff-006.wav')"></div>
+				<div id="hotkey" style="left:250;" onclick="hotkey('39156__jobro__piano-ff-009.wav')"></div>
+				<div id="hotkey" style="left:300;" onclick="hotkey('39158__jobro__piano-ff-011.wav')"></div>
+			</div>
+		</div>
+		<div class="piano_border2">
+			<div class="piano">
+				<div id="key" onclick="playKey('39188__jobro__piano-ff-041.wav')"></div>
+				<div id="key" onclick="playKey('39190__jobro__piano-ff-043.wav')"></div>
+				<div id="key" onclick="playKey('39193__jobro__piano-ff-045.wav')"></div>
+				<div id="key" onclick="playKey('39195__jobro__piano-ff-047.wav')"></div>
+				<div id="key" onclick="playKey('39196__jobro__piano-ff-048.wav')"></div>
+				<div id="key" onclick="playKey('39198__jobro__piano-ff-050.wav')"></div>
+				<div id="key" onclick="playKey('39200__jobro__piano-ff-052.wav')"></div>
+
+				<div id="hotkey" style="left:41;" onclick="hotkey('39189__jobro__piano-ff-042.wav')"></div>
+				<div id="hotkey" style="left:93;" onclick="hotkey('39191__jobro__piano-ff-044.wav')"></div>
+				<div id="hotkey" style="left:145;" onclick="hotkey('39194__jobro__piano-ff-046.wav')"></div>
+				<div id="hotkey" style="left:250;" onclick="hotkey('39197__jobro__piano-ff-049C.wav')"></div>
+				<div id="hotkey" style="left:300;" onclick="hotkey('39199__jobro__piano-ff-051.wav')"></div>
+			</div>
+		</div>
+	</body>
+</html>

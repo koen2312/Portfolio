@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="javascript.js"></script>
+    </head>
+    <body>
+        <div class="play_container">
+            <img id="backgroundgrass" src="images/backgroundgrass.png" onclick="playGunshot()"/>
+            <img id="dog" src="images/dog.gif" onclick="playGunshot()"/>
+            <button id="startbutton" onclick="startgame()">START GAME</button>
+
+            <img id="duck" src="images/flyingduck.gif" onclick="duckshot()"/>
+
+            <div id="stats_id">
+                <span class="stats">Duck hit: </span><span id="hit_span">0</span>
+                <span class="stats">Duck missed: </span><span id="miss_span">0</span>
+            </div>
+        </div>
+        <script src="javascript.js"></script>
+    </body>
+</html>

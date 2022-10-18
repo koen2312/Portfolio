@@ -1,0 +1,7 @@
+standing
+lopen 3
+lopen 6
+lopen 1
+lopen 2
+lopen 5
+lopen 4
