@@ -85,15 +85,7 @@ header{
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
-.ah{
-    color: #4d4d4d;
-    position: absolute;
-    top: 7%;
-    left: 10%;
-}
-.ah:hover{
-    color: #666666;
-}
+
 /*---main-nav---*/
 .main-nav{
     position: absolute;
@@ -131,6 +123,22 @@ form{
 .language{
     text-align: center;
 }
+.arrow{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    bottom: 7%;
+    left: 50%;
+    animation: MoveUpDown 2s linear infinite;
+}
+@keyframes MoveUpDown {
+    0%, 100% {
+      bottom: 7%;
+    }
+    50% {
+      bottom: 4%;
+    }
+  }
 
 
 /*--language--*/
@@ -171,6 +179,12 @@ border-bottom: 2px solid #2d862d;
 .projectsbox li{
     text-decoration: none;
     list-style: none;
+}
+.projectimg{
+    height: 200px;
+}
+.projectimgapple{
+    height: 350px;
 }
 /*--projecten--*/
 
